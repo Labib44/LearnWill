@@ -5,6 +5,11 @@
     background-size: cover;
 }
 
+.slider-item img {
+    height: 100%;
+    width: 100%;
+}
+
 .slider-item::before {
     content: "";
     display: block;
@@ -34,7 +39,18 @@
 }
 
 /* Carousel end */
-/* .course-card {
-    display: flex;
 
-} */
+@media only screen and (max-width: 667px) {
+    .small-device {
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .slider-item {
+        height: 400px;
+        min-height: 200px;
+        background-size: cover;
+    }
+}
